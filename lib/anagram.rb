@@ -8,7 +8,8 @@ def initialization(word)
 end
 
 def match(array)
-  array.select
+  array.select{|letters|letters.@word.split("")}
+  
   
   
 end

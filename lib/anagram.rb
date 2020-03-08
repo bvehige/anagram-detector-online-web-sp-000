@@ -8,8 +8,8 @@ def initialization(word)
 end
 
 def match(array)
-  array.select do |letters|
-    @word.split("").sort == letters.split("").sort
+  array.select do |words|
+    @word.split("").sort == words.split("").sort
   end
 end
   

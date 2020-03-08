@@ -8,7 +8,10 @@ def initialization(word)
 end
 
 def match(array)
-  array.select{|letters|letters.@word.split("")}
+  array.select do |letters|
+    (@word.split("").sort) == (array.split("").sort)
+  end
+end
   
   
   
